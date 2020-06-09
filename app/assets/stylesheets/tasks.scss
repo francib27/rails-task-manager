@@ -1,0 +1,25 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+h1, h2, p, label, .backlink {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.task-detail {
+  border: 1px solid #d5d5d5;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 10px;
+  padding-right: 500px;
+  background: #eeeeee;
+}
+
+.backbtn {
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.editbtn {
+  padding-left: 600px;
+}

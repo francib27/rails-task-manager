@@ -1,0 +1,16 @@
+<head><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet"></head>
+<div class="taskmanager">
+  <h1>My Tasks</h1>
+  <% @tasks.each do |task| %>
+    <div>
+      <input type="checkbox" id= <%= task.title%> name= <%= task.title%> >
+      <label for=<%= task.title%> ><%= link_to "#{task.title.capitalize}", task_path(task[:id]) %></label>
+    </div>
+  <% end %>
+</div>
+<div class="backbtn"><%= link_to "Add new task", tasks_new_path%></div>
+
+
+
+
+
